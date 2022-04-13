@@ -1,5 +1,5 @@
 # RUDP Protocol
-Built a server and client for the Reliable UDP commuications protocol. Added parts of the TCP protocol such as flags, 3-way handhsake, SEQ, ACK numbers on top of the standard UDP protocol.
+Built a server and client for the Reliable UDP communications protocol. Added parts of the TCP protocol such as flags, 3-way handhsake, SEQ, ACK numbers on top of the standard UDP protocol.
 It is less complex than TCP, but realiable unlike UDP.
 
 ## Prerequisites
