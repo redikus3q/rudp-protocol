@@ -40,8 +40,11 @@ while 1:
     elif util.checkFlags(clientFlags, util.flagPSH) and connectionEstablished:
         print(f"Message from client {address} : '{clientMessage}'\n")
 
+        if util.simulatePacketLoss:
         # Simulate packet loss 50% chance
-        packetLoss = random.getrandbits(1)
+            packetLoss = random.getrandbits(1)
+        else:
+            packetLoss = 1
         
         if packetLoss:
             serverPayload = util.makePayload(util.flagACK, serverSeqNumber, clientSeqNumber + sys.getsizeof(clientMessage))

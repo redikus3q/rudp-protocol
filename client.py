@@ -98,6 +98,7 @@ if __name__ == "__main__":
     startup()
 
     # Send some data
+    # These can be modified to send different stuff
     sendData("Hello world!")
     sendData("Packet 1")
 

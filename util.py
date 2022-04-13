@@ -5,6 +5,7 @@ localPort = 20001
 # Options
 bufferSize = 1024
 timeout = 3
+simulatePacketLoss = False
 
 # Flags
 flagFIN = 1
